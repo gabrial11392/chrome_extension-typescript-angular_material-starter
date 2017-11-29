@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2015", "dom"],
+  //  "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+	
+	// added this to use process.env.ENV in main.ts and to use chrome api
+	"typeRoots": [
+      ".././node_modules/@types"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+	
+  "manifest_version": 2,
+
+  "name": "Sample App",
+  "description": "Chrome extension starter with a simple background and option page.",
+  "version": "1.0",
+  "icons": {"18": "ic_all_inclusive_black_18dp.png", "24": "ic_all_inclusive_black_24dp.png", "36": "ic_all_inclusive_black_36dp.png", "48": "ic_all_inclusive_black_48dp.png"},
+ 
+ 
+  "options_page": "option.html",
+
+  "background": {
+    "scripts": [ "polyfills.js","vendor.js", "background.js"]
+  },
+
+  "permissions": [
+    "storage",
+	"notifications"
+  ],
+  
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  
+}
